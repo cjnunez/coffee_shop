@@ -10,6 +10,11 @@
     height: 40rem;
 }
 
+img {
+    background-color: whitesmoke;
+    border-radius: 100%;
+}
+
 .steps_section {
     display: flex;
     flex-direction: row;
