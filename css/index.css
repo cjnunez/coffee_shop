@@ -1,0 +1,21 @@
+.banner {
+    background-image: url("/images/banner_background.jpg");
+    color: whitesmoke;
+    display: flex;
+    align-items: center; 
+    margin: 5rem;
+    font-size: 3em;
+    text-shadow: black;
+    width: auto;
+    height: 40rem;
+}
+
+.steps_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.step_block {
+    background-color: greenyellow;
+}
