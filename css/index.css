@@ -3,17 +3,24 @@
     margin: 0;
 }
 
+body { background-color: #E5CCB6;}
+
 p, li{
     font-family: 'Sunflower', sans-serif;
+}
+
+#inverted_trees {
+    background-color: #E5CCB6;
+    width: 100%;
+    height: 30rem;
+    margin: 0%;
 }
 
 #grey {
     color: gray;
 }
 
-.background_white {
-    background-color: whitesmoke;
-}
+
 
 /* Banner Styling */
 .banner {
@@ -143,8 +150,6 @@ p, li{
     padding-bottom: 2%;
 }
 .step_block {
-    /* border: 2px solid black; */
-    /* background-color: #E5CCB6; */
     background-color: gray;
     padding-top: 5%;
     padding-bottom: 5%;
@@ -174,16 +179,23 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 }
 /* Product Block Styling */
 .product_intro {
-    padding-top: 5%;
+    background-color: #E5CCB6;
     display: flex;
     justify-content: left;
-    font-family: 'Cabin Sketch', cursive;
-    font-size: 2em;
-    margin-left: 5%;
-    margin-right: 60%;
-    border-bottom: 2px solid grey;
+    font-family: 'Cabin Sketch', cursive;    
+    
 }
-.shop_section {
+
+.product_intro h1 {
+    border-left: 2px solid grey;
+    font-size: 4em;
+    padding-left: 2.5%;
+    margin-left: 5%;
+
+
+}
+.product_section {
+    background-color: #E5CCB6;
     color: whitesmoke;
     display: flex;
     flex-direction: row;
@@ -191,9 +203,10 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
     padding-top: 5%;
 }
 
-.shop_section p {
-    font-size: 2em;
-    text-align: left;
+.product_section p {
+    font-size: 1.5em;
+    padding-top: 10%;
+    text-align: center;
 }
 .product_block_1 {
     background-image: url("/images/caramel_drink.jpg");
@@ -203,11 +216,14 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
     width: 20rem;
     height: 20rem;
     transition: all .3s;
+    border-radius: 20%;
+    -webkit-box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68); 
+box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 }
 
 .product_block_1:hover {
     background-image: none;
-    background-color: linear-gradient(red, orange);
+    background-color: whitesmoke;
     color: black;
     /* background-color: whitesmoke; */
 }
