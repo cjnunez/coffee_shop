@@ -2,12 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+<!-- font styles links  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
+<!-- Animation styles links-->
+
+<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+<script src="bower_components/aos/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
     <title>Mountain Coffee</title>
@@ -20,9 +31,9 @@
             <li>Products</li>
         </ul>
         <!-- <h1>Mountain Coffee Banner</h1> -->
-        <img src="/images/WoodsCoffee_logo.png" alt="">
+        <img data-aos="fade" data-aos-duration="3000" src="/images/WoodsCoffee_logo.png" alt="fml">
     </div>
-    <div class="intro_section">
+    <div class="intro_section" data-aos="fade">
         
         <h1>WOODS COFFEE IS MADE IN THE WOODS BY THE WOODS.</h1>
         <p>Founded in April 2002 by two man from North Dakota, Woods comes from an idea that coffee can be enjoyed by
@@ -74,12 +85,6 @@
             <div class="footer_block">
                 <p>yo what's up</p>
             </div>
-            <div id="coffee_bean_block" class="footer_block">
-                <p>check me over here</p>
-            </div>
-
-
-
         </div>
     </footer>
 </body>
