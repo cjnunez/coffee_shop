@@ -282,6 +282,31 @@ background: linear-gradient(0deg, rgba(126,126,126,1) 0%, rgba(229,204,182,1) 10
     width: 15rem;
 }
 
+.link_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 25%;
+}
+
+.link_square {
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    height: 20rem;
+
+    border-radius: 15%;
+    margin-bottom: 5%;
+}
+
+.link_square ul {
+    list-style: none;
+}
+
+.link_square li {
+    padding-top: 50%;
+}
 #coffee_bean_block {
     background-image: url("/images/mountain_cofee_beans.jpg");
     background-size: cover;
