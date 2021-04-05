@@ -14,13 +14,12 @@ p, li{
     height: 30rem;
     margin: 0%;
     border: none;
-
-    /* filter: drop-shadow(30px 10px 4px black); */
-    background-color: #E5CCB6;
+    filter: drop-shadow(30px 10px 4px black);
+    /* background-color: none; */
 }
 
 #grey {
-    color: gray;
+    color: #E5CCB6;
 }
 
 
@@ -39,15 +38,18 @@ p, li{
 }
 
 .banner ul {
-    margin-left: 70%;
-    padding-bottom: 20%;
+    margin-left: 75%;
+    margin-bottom: 20%;
+    padding: 1%;
+    box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
+
     list-style: none;
     display: block;
+    background-color: grey;
 }
 
 .banner li {
     display: inline;
-    box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
     font-size: 2em; 
 }
 
@@ -109,7 +111,6 @@ box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.25);
     display: flex;
     flex-direction: column;
     text-align: center;
-    /* justify-content: center; */
     align-items: center;
     width: 50%;
 }
@@ -198,15 +199,14 @@ box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.25);
     padding-bottom: 2%;
 }
 .step_block {
-    background-color: whitesmoke;
+    background-color: #E5CCB6;
     padding-top: 5%;
     padding-bottom: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
     width: 20rem;
     height: 15rem;
-    opacity: 95%;
-    /* border-radius: 20%; */
+    opacity: 80%;
     -webkit-box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68); 
 box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 }
@@ -225,19 +225,9 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
     width: 15rem;
     height: 15rem;
 }
-
-/* black block styling */
-.black_block {
-    background-color: black;
-    width: 100%;
-    height: 15rem;
-    border: none;
-    position: relative;
-    z-index: 0;
-}
 /* Product Block Styling */
 .product_intro {
-    background-color: #E5CCB6;
+    background-color: #ffffff;
     display: flex;
     justify-content: left;
     font-family: 'Lobster', cursive;
@@ -254,23 +244,24 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 
 }
 .product_section {
-    background-color: #E5CCB6;
+    background-color: #ffffff;
     color: grey;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    text-align: center;
     padding-top: 5%;
-    padding-bottom: 5%;
     text-shadow: 2px 2px 30px rgba(150, 150, 150, 1);
 }
 
 .product_section p {
     font-size: 2em;
+    margin-right: 12.5%;
+    color: black;
+    opacity: 70%;
     padding-top: 0%;
-    text-align: center;
 }
-.product_block_1 {
-    background-image: url("/images/caramel_drink.jpg");
+.product_block {
     color: rgba(0, 0, 0, 0);
     background-size: cover;
     background-repeat: no-repeat;
@@ -282,23 +273,50 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 }
 
-.product_block_1 p {
+#caramel_drink {
+    background-image: url("/images/caramel_drink.jpg");
+}
+
+#caramel_drink:hover {
+    background-image: none;
+    background-color: whitesmoke;
+}
+#espresso_drink {
+    background-image: url("/images/plain_espresso.jpg");
+}
+
+#iced_drink {
+    background-image: url("/images/ice_coffee_drink.jpg");
+}
+
+.product_block p {
+    opacity: 0%;
     font-size: 1.5em;
 }
-.product_block_1:hover {
+.product_block:hover {
     background-image: none;
     background-color: whitesmoke;
     color: black;
-    /* background-color: whitesmoke; */
+}
+
+.grey_marble_2 {
+    background-image: url("/images/grey_marble.jpg");
+    /* margin-top: 20%; */
+    margin-left: 55%;
+    height: 5rem;
+    width: 30rem;
+    opacity: 80%;
+    background-color: #ffffff;
 }
 
 /* Footer Styling */
 
 footer {
 background: rgb(126,126,126);
-background: linear-gradient(0deg, rgba(126,126,126,1) 0%, whitesmoke 100%);}
+background: linear-gradient(0deg, #E5CCB6, #ffffff 100%);}
 
 .footer_container {
+    padding-top: 25%;
     display: flex;
     flex-direction: column;
 }
@@ -306,7 +324,7 @@ background: linear-gradient(0deg, rgba(126,126,126,1) 0%, whitesmoke 100%);}
 .footer_block {
     width: 100%;
     height: 60rem;
-    padding-top:50%;
+    padding-top:30%;
 }
 
 .instagram_block {
@@ -318,33 +336,37 @@ background: linear-gradient(0deg, rgba(126,126,126,1) 0%, whitesmoke 100%);}
 }
 
 .instagram_block img {
-    background-color: whitesmoke;
-    border-radius: 100%;
+    color: whitesmoke;
     margin-bottom: 5%;
     opacity: 90%;
-    box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
-
-    height: 15rem;
-    width: 15rem;
+    height: 8rem;
+    width: 8rem;
 }
 
 .link_block {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-top: 25%;
+    padding-top: 30%;
 }
 
 .link_square {
-    background-color: #E5CCB6;
+    background-color: grey;
     display: flex;
+    color: black;
+    opacity: 80$;
     justify-content: center;
     box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
-    width: 20rem;
-    height: 20rem;
+    width: 15rem;
+    height: 15rem;
+}
 
-    border-radius: 15%;
-    margin-bottom: 5%;
+.link_block img {
+    color: whitesmoke;
+    background-color: whitesmoke;
+    box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
+
+    border-radius: 100%;
 }
 
 .link_square ul {
@@ -352,7 +374,9 @@ background: linear-gradient(0deg, rgba(126,126,126,1) 0%, whitesmoke 100%);}
 }
 
 .link_square li {
-    padding-top: 50%;
+    font-size: 1em;
+    opacity: 60%;
+    padding-top: 40%;
 }
 #coffee_bean_block {
     background-image: url("/images/mountain_cofee_beans.jpg");
