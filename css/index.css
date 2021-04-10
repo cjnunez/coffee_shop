@@ -3,6 +3,14 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
 body { background-color: whitesmoke;}
 
 p, li{
@@ -49,8 +57,15 @@ p, li{
 }
 
 .banner li {
+    color: #ffffff;
     display: inline;
     font-size: 2em; 
+    transition: all .3s;
+}
+
+.banner li :hover {
+    background-color: whitesmoke;
+    color: black;
 }
 
 .banner img {
@@ -60,6 +75,16 @@ p, li{
     margin-bottom: 10%;
     transition-delay: 1s;
 }
+
+/* .banner a {
+    transition: all 6s;
+}
+
+.banner a :hover {
+    background-color: whitesmoke;
+    color: black;
+    transform: scale(1.1);
+} */
 
 /* Intro section styling */
 
@@ -193,7 +218,7 @@ box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.25);
     font-family: 'Sunflower', sans-serif;
     color: black;
     opacity: 75%;
-    border-bottom: 2px solid #E5CCB6;
+    border-bottom: 2px solid gray;
     margin-left: 10%;
     margin-right: 10%;
     padding-bottom: 2%;
@@ -204,11 +229,16 @@ box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.25);
     padding-bottom: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
+    transition: all .3s;
     width: 20rem;
     height: 15rem;
     opacity: 80%;
     -webkit-box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68); 
 box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
+}
+
+.step_block:hover {
+    transform: scale(1.1);
 }
 
 .step_block img {
@@ -250,6 +280,7 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
     flex-direction: row;
     justify-content: space-evenly;
     text-align: center;
+    
     padding-top: 5%;
     text-shadow: 2px 2px 30px rgba(150, 150, 150, 1);
 }
@@ -277,10 +308,7 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
     background-image: url("/images/caramel_drink.jpg");
 }
 
-#caramel_drink:hover {
-    background-image: none;
-    background-color: whitesmoke;
-}
+
 #espresso_drink {
     background-image: url("/images/plain_espresso.jpg");
 }
@@ -290,13 +318,11 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 }
 
 .product_block p {
-    opacity: 0%;
     font-size: 1.5em;
 }
 .product_block:hover {
-    background-image: none;
-    background-color: whitesmoke;
     color: black;
+    transform: scale(1.1);
 }
 
 .grey_marble_2 {
@@ -359,6 +385,11 @@ background: linear-gradient(0deg, #E5CCB6, #ffffff 100%);}
     box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
     width: 15rem;
     height: 15rem;
+    transition: all .3s;
+}
+
+.link_square:hover {
+    transform: scale(1.1);
 }
 
 .link_block img {

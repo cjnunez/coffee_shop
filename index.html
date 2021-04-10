@@ -21,6 +21,22 @@
     AOS.init();
   </script>
 
+<!-- Scripts for alerts -->
+<script>
+    function caramel_drink_alert() {
+        alert("Our classic caramel infused drink!"); 
+    }
+
+    function espresso_drink_alert() {
+        alert("Our NEW espresso to get your day going!"); 
+    }
+
+    function iced_drink_alert() {
+        alert("Sweet, refreshing, and just the right amount of kick!"); 
+    }
+</script>
+<!-- Scripts for aletts end -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index.css">
     <title>Mountain Coffee</title>
@@ -28,9 +44,13 @@
 <body>
     <div class="banner">
         <ul>
-            <li>Process</li>
+           <a href="#process_section">
+               <li>Process</li>
+           </a> 
             <li id="grey"> | </li>
-            <li>Products</li>
+            <a href="#product_section">
+                <li>Products</li>
+            </a>
         </ul>
         <img data-aos="fade" data-aos-duration="3000" src="/images/WoodsCoffee_logo.png" alt="fml">
     </div>
@@ -49,7 +69,7 @@
 
     </div>
     
-    <div class="process_section">
+    <div class="process_section" id="process_section">
         <!-- <h1>OUR PROCESS</h1> -->
         <p>Our extensive and detailed oriented process that is both simple and intuitive</p>
         <div class="steps_section">
@@ -73,15 +93,12 @@
     <div class="product_intro">
         <h1> PRODUCTS</h1>
     </div>
-    <div class="product_section">
-        <div class="product_block" id="caramel_drink">
-            <p>See Details about the drink </p>
+    <div class="product_section" id="product_section">
+        <div class="product_block" id="caramel_drink" onclick="caramel_drink_alert()">
         </div>
-        <div class="product_block" id="espresso_drink">
-            <p>See details about the drink </p>
+        <div class="product_block" id="espresso_drink" onclick="espresso_drink_alert()">
         </div>
-        <div class="product_block" id="iced_drink">
-            <p>See details about the drink</p>
+        <div class="product_block" id="iced_drink" onclick="iced_drink_alert()">
         </div>
     </div>
     <div class="product_section">
