@@ -384,7 +384,7 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 
 
 #espresso_drink {
-    background-image: url('../images/plain_espresso.jpg');
+    /* background-image: url('../images/plain_espresso.jpg'); */
 }
 
 #iced_drink {
