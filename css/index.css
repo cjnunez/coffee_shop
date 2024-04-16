@@ -106,11 +106,11 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(229,204,182,1) 10
     margin-left: 10%;
     padding: 2.5%;
     color: grey;
-    width: 90%%;
+    /* width: 90%%; */
     /* width: 30rem; */
     background-color: whitesmoke;
-    -webkit-box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.42); 
-box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.25);
+    /* -webkit-box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.42); 
+box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.25); */
 }
 
 
