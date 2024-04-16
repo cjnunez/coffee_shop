@@ -190,7 +190,7 @@ box-shadow: 5px 5px 28px 5px rgba(0,0,0,0.25); */
 .grey_marble {
     position: relative;
     background: none;
-    background-image: url("../images/grey_marble.jpg");
+    background-image: url('../images/grey_marble.jpg');
     margin-top: 35%;
     margin-left: 60%;
     width: 60rem;
@@ -379,16 +379,16 @@ box-shadow: 0px 19px 50px 4px rgba(0,0,0,0.68);
 }
 
 #caramel_drink {
-    background-image: url("../images/caramel_drink.jpg");
+    background-image: url('../images/caramel_drink.jpg');
 }
 
 
 #espresso_drink {
-    background-image: url("../images/plain_espresso.jpg");
+    background-image: url('../images/plain_espresso.jpg');
 }
 
 #iced_drink {
-    background-image: url("../images/ice_coffee_drink.jpg");
+    background-image: url('../images/ice_coffee_drink.jpg');
 }
 
 .product_block p {
