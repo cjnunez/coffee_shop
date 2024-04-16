@@ -34,7 +34,7 @@ p, li{
 
 /* Banner Styling */
 .banner {
-    background-image: url("/images/vertical_wood.jpg");
+    background-image: url("./images/vertical_wood.jpg");
     color: whitesmoke;
     display: flex;
     flex-direction: column;
